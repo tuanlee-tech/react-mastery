@@ -8,7 +8,7 @@ const repo = "react-mastery";
 export default defineConfig({
   lang: "vi-VN",
   title: "ReactJS Mastery",
-  description: "Khoá ReactJS 30 ngày – React 18/19, performance, hooks, patterns, best practices.",
+  description: isProd ? `/${repo}/` : "/"+"Khoá ReactJS 30 ngày – React 18/19, performance, hooks, patterns, best practices.",
   head: [
     ['script', { type: 'application/ld+json' }, JSON.stringify({
       "@context": "https://schema.org",
