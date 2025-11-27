@@ -4,9 +4,9 @@ import react from '@vitejs/plugin-react'
 
 const isProd = process.env.NODE_ENV === "production"; // true nếu build (production)
 const repo = "react-mastery";
-
+const base = isProd ? `/${repo}/` : "/"; // dynamic base path
 export default defineConfig({
-  base: isProd ? `/${repo}/` : "/", // dynamic base path
+  base: base,
   lang: "vi-VN",
   title: "ReactJS Mastery",
   description: "Khoá ReactJS 30 ngày – React 18/19, performance, hooks, patterns, best practices.",
@@ -17,7 +17,7 @@ export default defineConfig({
       "name": "ReactJS Mastery",
       "url": "https://tuanlee-tech.github.io/react-mastery"
     })],
-    ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+    ['link', { rel: 'icon', type: 'image/png', href: `${base}favicon.png` }],
     ['meta', { name: 'theme-color', content: '#61dafb' }],
     // Meta viewport
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
@@ -30,14 +30,14 @@ export default defineConfig({
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: 'ReactJS Mastery' }],
     ['meta', { property: 'og:description', content: 'Khoá ReactJS 30 ngày với React 18/19, performance, hooks, patterns' }],
-    ['meta', { property: 'og:image', content: '/og-image.png' }],
+    ['meta', { property: 'og:image', content: `${base}og-image.png` }],
     ['meta', { property: 'og:url', content: 'https://tuanlee-tech.github.io/react-mastery' }],
 
     // Twitter Card
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:title', content: 'ReactJS Mastery' }],
     ['meta', { name: 'twitter:description', content: 'Khoá ReactJS 30 ngày với React 18/19, performance, hooks, patterns' }],
-    ['meta', { name: 'twitter:image', content: '/og-image.png' }],
+    ['meta', { name: 'twitter:image', content: `${base}og-image.png` }],
   ],
   vite: {
     plugins: [react()],
