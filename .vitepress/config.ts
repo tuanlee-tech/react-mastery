@@ -37,7 +37,7 @@ export default defineConfig({
   ],
   vite: {
     plugins: [react()],
-    base: "/react-mastery",
+    base: "/react-mastery/",
     resolve: {
       alias: {
         '@ui': path.resolve(__dirname, '../components/ui'),
