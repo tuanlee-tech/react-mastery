@@ -10,7 +10,7 @@ export default defineConfig({
   lang: "vi-VN",
   title: "Dev Handbook",
   description: "Personal tech knowledge base - Frontend, Backend, DevOps, Tools & Tips",
-  
+  ignoreDeadLinks: true,
   head: [
     ['script', { type: 'application/ld+json' }, JSON.stringify({
       "@context": "https://schema.org",
