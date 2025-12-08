@@ -112,7 +112,9 @@ export default defineConfig({
                 { text: "Flexbox & Grid", link: "/frontend/html-css/flexbox-grid" },
                 { text: "Responsive Design", link: "/frontend/html-css/responsive-design" },
                 { text: "CSS Tricks & Tips", link: "/frontend/html-css/css-tricks" },
-                { text: "Tailwind CSS", link: "/frontend/html-css/tailwind-css" },
+                { text: "SCSS, Web Components & Build Tools", link: "/frontend/html-css/scss-web-components-and-build-tools" },
+                { text: "SCSS Zero to Hero: Enterprise Edition 2025", link: "/frontend/html-css/scss-zero-to-hero-enterprise-edition-2025" },
+                { text: "Mobile-First 2025: Performance, SEO & A11y", link: "/frontend/html-css/mobile-first-2025-performance-seo-and-a11y" },
               ]
             },
             {
@@ -130,9 +132,9 @@ export default defineConfig({
               collapsed: true,
               items: [
                 { text: "React Overview", link: "/frontend/react/" },
-                { text: "Hooks Guide", link: "/frontend/react/hooks-guide" },
+                { text: "Tối Ưu React Rendering", link: "/frontend/react/toi-uu-react-rendering" },
                 { text: "State Management", link: "/frontend/react/state-management" },
-                { text: "Performance Tips", link: "/frontend/react/performance" },
+                { text: "React Component Lifecycle", link: "/frontend/react/react-component-lifecycle" },
                 { text: "📘 React Mastery (30 Days)", link: "/frontend/react/react-mastery/" },
               ]
             },
@@ -444,8 +446,8 @@ export default defineConfig({
     ],
 
     footer: {
-      message: 'Built with VitePress',
-      copyright: 'Copyright © 2024 Tuan Lee'
+      message: 'Personal tech knowledge base',
+      copyright: 'Copyright © 2025 Tuan Lee'
     },
 
     search: {
