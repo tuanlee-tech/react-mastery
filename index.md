@@ -2,60 +2,103 @@
 layout: home
 
 hero:
-  name: "ReactJS Mastery"
-  text: "Sau 30 ngày"
-  tagline: "Trở thành Senior-Level React Engineer"
+  name: "Dev Handbook"
+  text: "Tech Knowledge Base"
+  tagline: "Frontend, Backend, DevOps & Everything In Between"
   actions:
     - theme: brand
-      text: Bắt đầu học
-      link: /30-days
+      text: Khám phá kiến thức
+      link: /getting-started
     - theme: alt
-      text: Xem giáo án
-      link: /curriculum
+      text: Roadmap học tập
+      link: /roadmap
 
 features:
-  - title: "📘 Nền tảng vững chắc (JSX, Components)"
+  - title: "⚛️ Frontend Development"
     details: >
-      Nắm toàn bộ React Fundamentals: JSX, Rendering, Components, Composition,
-      Props, Children, Fragments, đọc – hiểu – refactor code class components.
+      React, Vue, JavaScript/TypeScript, HTML/CSS, Performance optimization,
+      State management, Component patterns, Modern frameworks & best practices.
 
-  - title: "⚡ State & Effects nâng cao"
+  - title: "🔧 Backend Development"
     details: >
-      Thành thạo useState, useReducer, lifting state, derived state,
-      batching, useEffect chuẩn xác, cleanup, tránh race conditions.
+      Node.js, Express, NestJS, Python, FastAPI, REST APIs, GraphQL,
+      Authentication, Database design, Microservices architecture.
 
-  - title: "🔧 Hooks nâng cao (React 18 & 19)"
+  - title: "🗄️ Databases & ORM"
     details: >
-      Toàn bộ hooks modern: useTransition, useDeferredValue, useId, useOptimistic,
-      useActionState, useFormStatus, custom hooks, performance hooks (useMemo, useCallback, React.memo).
+      PostgreSQL, MongoDB, Redis, Prisma, TypeORM, Query optimization,
+      Indexing strategies, Database migrations, Connection pooling.
 
-  - title: "🌐 Context & Forms chuyên sâu"
+  - title: "🐳 DevOps & Infrastructure"
     details: >
-      Context API, tối ưu re-render, kiến trúc multi-context, controlled/uncontrolled forms,
-      React Hook Form, async submission, validation nâng cao.
+      Docker, Docker Compose, Kubernetes basics, CI/CD pipelines,
+      GitHub Actions, GitLab CI, Nginx, PM2, Server deployment.
 
-  - title: "🚀 Tối ưu Performance"
+  - title: "🛠️ Tools & Productivity"
     details: >
-      Code splitting, lazy loading, Suspense, virtualization, profiling,
-      tối ưu render, large lists, concurrent rendering.
+      Git workflows, VSCode extensions & shortcuts, Terminal tips,
+      Debugging techniques, Code review practices, Documentation tools.
 
-  - title: "📦 Patterns & Best Practices"
+  - title: "🎨 UI/UX & Design Systems"
     details: >
-      Compound components, Render Props, HOC, Container/Presentational,
-      folder structure, naming conventions, anti-patterns cần tránh.
+      Tailwind CSS, Component libraries (shadcn/ui, MUI), Responsive design,
+      Accessibility (a11y), Animation libraries, Design tokens.
 
-  - title: "🧪 Testing & Error Handling"
+  - title: "🧪 Testing & Quality"
     details: >
-      Testing Library, mock API với MSW, testing hooks, snapshot,
-      error boundaries, fallback UI, logging.
+      Unit testing, Integration testing, E2E testing (Playwright, Cypress),
+      Testing Library, Jest, Vitest, TDD practices, Code coverage.
 
-  - title: "🆕 React 18/19 Features mới nhất"
+  - title: "🚀 Performance & Optimization"
     details: >
-      Server Components, built-in Actions, Suspense SSR, Asset Loading,
-      metadata APIs, ref-as-prop, context provider simplification.
+      Web Vitals, Lighthouse optimization, Bundle size reduction,
+      Lazy loading, Code splitting, Caching strategies, CDN usage.
 
-  - title: "🏆 Capstone Project thực chiến"
+  - title: "📚 Best Practices & Patterns"
     details: >
-      Xây dựng ứng dụng hoàn chỉnh từ A–Z: routes, code splitting, global state,
-      form validation, performance, error boundaries, React 19 features.
+      Clean code principles, Design patterns, SOLID principles,
+      Folder structure, Naming conventions, Security best practices, Anti-patterns to avoid.
+
+  - title: "🚀 DSA Mastery - 100 Days Course"
+    details: >
+      Comprehensive Data Structures & Algorithms course from Zero to Expert.
+      JavaScript-based, 4 phases, 200+ problems. Ready for Big Tech interviews.
 ---
+
+## 🎓 Featured Courses
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; margin: 2rem 0;">
+
+<div style="border: 2px solid #61dafb; border-radius: 8px; padding: 1.5rem;">
+
+### 📘 React Mastery
+**30 Days Course**
+
+From Foundation to Senior Level
+
+- ✅ React 18/19 features
+- ✅ 6 systematic phases
+- ✅ Performance optimization
+- ✅ Real-world projects
+
+<a href="/frontend/react/react-mastery/" class="like-btn">Start Learning →</a>
+</div>
+
+<div style="border: 2px solid #f0db4f; border-radius: 8px; padding: 1.5rem;">
+
+### 🚀 DSA Mastery
+**100 Days Course**
+
+From Zero to Expert
+
+- ✅ 4 progressive phases
+- ✅ 200+ problems solved
+- ✅ JavaScript + C++
+- ✅ Big Tech interview ready
+
+<a href="/dsa/" class="like-btn">Start Learning →</a>
+
+
+</div>
+
+</div>

@@ -136,3 +136,24 @@
 .DocSearch {
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
+
+.vp-doc a.like-btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0 20px;
+  line-height: 38px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 20px;
+  border: 1px solid var(--vp-button-brand-border, #10b981);
+  color: var(--vp-button-brand-text, #ffffff);
+  background-color: var(--vp-button-brand-bg, #10b981);
+  transition: color 0.25s, border-color 0.25s, background-color 0.25s;
+  cursor: pointer;
+}
+
+.vp-doc a.like-btn:hover {
+  border-color: var(--vp-button-brand-hover-border, #059669);
+  color: var(--vp-button-brand-hover-text, #ffffff);
+  background-color: var(--vp-button-brand-hover-bg, #059669);
+}

@@ -1,9 +1,0 @@
-export { Input } from './input';
-export { Button } from './button';
-export { Select } from './select';
-export { Checkbox } from './checkbox';
-export { Switch } from './switch';
-export { Card } from './card';
-export { Modal } from './modal';
-export { Tooltip } from './tooltip';
-export { theme } from './theme';
