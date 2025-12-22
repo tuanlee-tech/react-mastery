@@ -191,12 +191,26 @@ afterEach(() => {
 **Bước 1: Cài packages**
 
 ```bash
-npm install -D jest @types/jest ts-jest
-npm install -D @testing-library/react @testing-library/jest-dom @testing-library/user-event
-npm install -D jest-environment-jsdom
+npm install -D jest @types/jest @testing-library/react @testing-library/jest-dom @testing-library/user-event babel-jest @babel/core @babel/preset-env @babel/preset-react @babel/preset-typescript jest-environment-jsdom identity-obj-proxy jest-transform-stub
 ```
 
-**Bước 2: Tạo file `jest.config.js`**
+**Bước 2: Tạo file `babel.config.cjs`**
+
+```js
+// babel.config.cjs
+module.exports = {
+    presets: [
+        [
+            '@babel/preset-env',
+            { targets: { esmodules: true, node: 'current' } },
+        ],
+        ['@babel/preset-react', { runtime: 'automatic' }],
+        '@babel/preset-typescript',
+    ],
+};
+```
+
+**Bước 3: Tạo file `jest.config.cjs`**
 
 ```javascript
 module.exports = {
@@ -210,7 +224,7 @@ module.exports = {
 
     // setupFilesAfterEnv
     // → File chạy sau khi setup môi trường test
-    setupFilesAfterEnv: ['<rootDir>/src/test/setup.ts'],
+    setupFilesAfterEnv: ['<rootDir>/src/test/jest.setup.ts'],
 
     // moduleNameMapper
     // → Xử lý CSS imports (vì Jest không hiểu CSS)
@@ -221,21 +235,35 @@ module.exports = {
     // transform
     // → Chuyển .ts/.tsx sang JavaScript
     transform: {
-        '^.+\\.tsx?$': 'ts-jest',
+        '^.+\\.tsx?$': 'babel-jest',
+        // Handle image imports, etc.
+        '.+\\.(css|less|sass|scss|png|jpg|gif|ttf|woff|woff2|svg)$':
+            'jest-transform-stub',
     },
 };
 ```
 
 **Bước 3: File setup giống Vitest**
 
+```js
+//jest.setup.ts
+
+import '@testing-library/jest-dom';
+
+import { cleanup } from '@testing-library/react';
+
+// 🧹 Jest có afterEach global, không cần import
+afterEach(() => cleanup());
+```
+
 **Bước 4: Scripts trong `package.json`**
 
 ```json
 {
     "scripts": {
-        "test": "jest",
-        "test:watch": "jest --watch",
-        "test:coverage": "jest --coverage"
+        "jest-test": "jest",
+        "jest-test:watch": "jest --watch",
+        "jest-test:coverage": "jest --coverage"
     }
 }
 ```
