@@ -252,6 +252,10 @@ export default defineConfig({
                                     link: '/frontend/react/toi-uu-react-rendering',
                                 },
                                 {
+                                    text: 'React Workflow',
+                                    link: '/frontend/react/react_workflow',
+                                },
+                                {
                                     text: 'State Management',
                                     link: '/frontend/react/state-management',
                                 },
